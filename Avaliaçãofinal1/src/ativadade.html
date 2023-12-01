@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="atividade.css">
+    <title>Cadastro de Veículos</title>
+</head>
+<body>
+
+    <h1>Cadastro de Veículos</h1>
+    
+    <label for="marca">Marca:</label>
+    <input type="text" id="marca" required>
+
+    <label for="modelo">Modelo:</label>
+    <input type="text" id="modelo" required>
+
+    <label for="placa">Placa:</label>
+    <input type="text" id="placa" required>
+
+    <label for="combustivel">Combustível:</label>
+    <select id="combustivel" name="combustivel">
+        <option value="gasolina">Gasolina</option>
+        <option value="alcool">Álcool</option>
+        <option value="diesel">Diesel</option>
+    </select>
+
+    <label for="peso">Peso (kg):</label>
+    <input type="number" id="peso" required>
+
+    <label for="acessorios">Acessórios:</label>
+    <input type="checkbox" id="acessorios"> Ar Condicionado
+    <input type="checkbox" id="acessorios"> Direção Hidráulica
+    <input type="checkbox" id="acessorios"> Vidros Elétricos
+
+    <label for="direcao">Direção Hidráulica:</label>
+    <input type="checkbox" id="direcao">
+
+    <label for="garantia">Garantia:</label>
+    <input type="checkbox" id="garantia">
+
+    <button onclick="calcularTotal()">Cadastrar</button>
+
+    <h2>Resumo do Cadastro</h2>
+    <div id="resumo"></div>
+
+    <script src="controller/atividade.js"></script>
+</body>
+</html>

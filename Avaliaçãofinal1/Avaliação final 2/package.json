@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/node": "^20.10.1",
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5"
+  }
+}
